@@ -21,27 +21,23 @@ Table of contents
 
 # Join the #ramp-up channel on Puppet Community Slack
 
-Our [Puppet Community Slack](http://slack.puppet.com) is a great way to interact with other Puppet users.  The #ramp-up channel is specifically for users talking about starting with PE and using this repository.
-
-Other channels in the Puppet Community Slack are great for asking general Puppet questions as well.
+Our [Puppet Community Slack](http://slack.puppet.com) is a great way to interact with other Puppet users.  The #ramp-up channel is specifically for users who are using this repository who are new to Puppet Enterprise. Other channels in the Puppet Community Slack are great for asking general Puppet questions.
 
 # Before starting
 
-This control-repo and the steps below are intended to be used during a new installation of PE.
+This control-repo and the steps below are intended to be used with a new installation of PE 2015.3.z.  However, you can use existing installations of 2015.3.z, including [upgrades from 2015.2.z to 2015.3.z](#upgrading-to-pe20153z-from-pe-20152z), if you complete some additional steps.
 
-The instructions are geared towards a new installation of PE2015.3.z.  However, the control-repo should work just fine on [PE2015.2.z](#upgrading-to-pe20153z-from-pe-20152z)
-
-If you intend to use this control-repo on an existing installation then be warned that if you've already written or downloaded modules when you start using r10k it will remove all of the existing modules and replace them with what you define in your Puppetfile.  Please copy or move your existing modules to another directory to ensure you do not lose any work you've already started.
+**Warning:** When using an existing PE installation, running `r10k deploy environment -pv` removes all existing modules and replaces them with with the modules defined in your [Puppetfile](https://docs.puppetlabs.com/pe/2015.3/cmgmt_puppetfile.html). Please copy or move your existing modules to another directory to ensure you do not lose any work.
 
 # What you get from this control-repo
 
-As a result of following the instructions below you will receive the beginning of a best-practices installation of PE including...
+When you finish the instructions below, you will have the beginning of a best practices installation of PE including:
 
  - A Git server
  - The ability to push code to your Git server and have it automatically deployed to your PE master
- - A config_version script to output the commit of code that your agent just applied
+ - A config_version script that outputs the most recent sha and commit message for your code deployment each time you run `puppet agent -t`
  - Optimal tuning of PE settings for this configuration
- - Working and example roles/profiles code
+ - Working and example [roles and profiles](https://docs.puppetlabs.com/pe/2015.3/puppet_assign_configurations.html#assigning-configuration-data-with-role-and-profile-modules) code
 
 # How to set it all up
 
