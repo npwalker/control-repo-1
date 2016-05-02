@@ -21,7 +21,7 @@ Table of contents
 
 # Join the #ramp-up channel on Puppet Community Slack
 
-Our [Puppet Community Slack](http://slack.puppet.com) is a great way to interact with other Puppet users.  The #ramp-up channel is specifically for users who are using this repository who are new to Puppet Enterprise. Other channels in the Puppet Community Slack are great for asking general Puppet questions.
+Our [Puppet Community Slack](http://slack.puppet.com) is a great way to interact with other Puppet users.  The #ramp-up channel is specifically for users who are new to Puppet Enterprise and using this repository. Other channels in the Puppet Community Slack are great for asking general Puppet questions.
 
 # Before starting
 
@@ -35,7 +35,7 @@ When you finish the instructions below, you will have the beginning of a best pr
 
  - A Git server
  - The ability to push code to your Git server and have it automatically deployed to your PE master
- - A config_version script that outputs the most recent sha and commit message for your code deployment each time you run `puppet agent -t`
+ - A config_version script that outputs the most recent sha for your code deployment each time you run `puppet agent -t`
  - Optimal tuning of PE settings for this configuration
  - Working and example [roles and profiles](https://docs.puppetlabs.com/pe/2015.3/puppet_assign_configurations.html#assigning-configuration-data-with-role-and-profile-modules) code
 
