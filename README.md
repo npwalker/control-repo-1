@@ -106,6 +106,7 @@ At this point you have our control-repo code deployed into your Git server.  How
 We will set up a deploy key in the Git server that will allow an SSH key we make to deploy the code and configure everything else.
 
 1. On your Puppet master, make an SSH key for r10k to connect to GitLab
+ - `mkdir /etc/puppetlabs/puppetserver/ssh`
  - `/usr/bin/ssh-keygen -t rsa -b 2048 -C 'code_manager' -f /etc/puppetlabs/puppetserver/ssh/id-control_repo.rsa -q -N ''`
  - `cat /etc/puppetlabs/puppetserver/ssh/id-control_repo.rsa.pub`
  - References:
@@ -176,13 +177,13 @@ Independent of which Git server you choose you will grab the webhook URL from yo
 
 One of the components setup by this control-repo is that when you "push" code to your Git server, the git server will inform the Puppet master to deploy branch you just pushed.
 
-1. In one terminal window, `tail -f /var/log/puppetlabs/puppetserver/puppetserver.log`
-2. In a second terminal window
+1. On your Puppet Master, `tail -f /var/log/puppetlabs/puppetserver/puppetserver.log`
+2. On your laptop in a separate terminal window:
  - Add a new file, `touch test_file`
  - `git add test_file`
  - `git commit -m "adding a test_file"`
  - `git push origin production`
 3. Allow the push to complete and then wait a few seconds for everything to sync over
- - `ls -l /etc/puppetlabs/code/environments/production`
+ - On your Puppet Master, `ls -l /etc/puppetlabs/code/environments/production`
     - Confirm test_file is present
 4. In your first terminal window review the `puppetserver.log` to see the type of logging each sync will create
