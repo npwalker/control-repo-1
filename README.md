@@ -96,7 +96,7 @@ Coming soon!
 2. Expand the tarball and `cd` into the directory.
 3. Run `puppet-enterprise-installer` to install PE.
 
-If you have any issues or questions about the installer, see our docs here:
+If you have any issues with or questions about the installer, see our docs here:
 
 http://docs.puppetlabs.com/pe/latest/install_basic.html
 
