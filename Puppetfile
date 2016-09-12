@@ -16,6 +16,10 @@ mod "npwalker/pe_metric_curl_cron_jobs", '1.0.2'
 #  :git => 'https://github.com/npwalker/pe_code_manager_webhook',
 #  :ref => 'de20a9640652e62b7971623f0bdf4babb5411637'
 
+mod 'pe_databases',
+  :git    => 'https://github.com/npwalker/pe_databases',
+  :ref    => '3d56927941419b22a347806f5e9696a90f891e09'
+
 mod 'gms',
   :git    => 'https://github.com/abrader/abrader-gms',
   :ref    => 'a5105e95cf0f8b84a143d7a69a83e3ff3d4e02fb'
