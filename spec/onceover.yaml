@@ -1,0 +1,29 @@
+# Classes to be tested
+classes:
+  - role::all_in_one_pe
+  - role::database_server
+  - role::example
+  - role::webserver
+
+# Nodes to tests classes on, this refers to a 'factset' or 'nodeset'
+# depending on weather you are running 'spec' or 'acceptance' tests
+nodes:
+  - CentOS-5.11-64
+  - CentOS-6.6-64
+  - CentOS-7.0-64
+  - Ubuntu-12.04-64
+  - Ubuntu-14.04-64
+
+# You can group classes here to save typing
+class_groups:
+
+# You can group nodes here to save typing
+# We have created a 'non_windows_nodes' group because we can't
+# give you Windows vagrant boxes to test with because licensing,
+# we can give you fact sets though so go crazy with spec testing!
+node_groups:
+
+test_matrix:
+  - all_nodes:
+      classes: 'all_classes'
+      tests: 'all_tests'

@@ -1,0 +1,137 @@
+HOSTS:
+  CentOS-5.11-32:
+    roles:
+      - agent
+    type: aio
+    platform: el-5-32
+    box: puppetlabs/centos-5.11-32-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/centos-5.11-i386-virtualbox-puppet-1.0.3.box
+    hypervisor: vagrant_virtualbox
+  CentOS-5.11-64:
+    roles:
+      - agent
+    type: aio
+    platform: el-5-64
+    box: puppetlabs/centos-5.11-64-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/centos-5.11-x86_64-virtualbox-puppet-1.0.3.box
+    hypervisor: vagrant_virtualbox
+  CentOS-6.6-32:
+    roles:
+      - agent
+    type: aio
+    platform: el-6-32
+    box: puppetlabs/centos-6.6-32-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/centos-6.6-i386-virtualbox-puppet-1.0.3.box
+    hypervisor: vagrant_virtualbox
+  CentOS-6.6-64:
+    roles:
+      - agent
+    type: aio
+    platform: el-6-64
+    box: puppetlabs/centos-6.6-64-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/centos-6.6-x86_64-virtualbox-puppet-1.0.3.box
+    hypervisor: vagrant_virtualbox
+  CentOS-7.0-64:
+    roles:
+      - agent
+    type: aio
+    platform: el-7-64
+    box: puppetlabs/centos-7.0-64-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/centos-7.0-x86_64-virtualbox-puppet-1.0.2.box
+    hypervisor: vagrant_virtualbox
+  Debian-6.0.10-32:
+    roles:
+      - agent
+    type: aio
+    platform: debian-6.0.10-32
+    box: puppetlabs/Debian-6.0.10-32-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/debian-6.0.10-i386-virtualbox-puppet-1.0.2.box
+    hypervisor: vagrant_virtualbox
+  Debian-6.0.10-64:
+    roles:
+      - agent
+    type: aio
+    platform: debian-6.0.10-64
+    box: puppetlabs/Debian-6.0.10-64-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/debian-6.0.10-x86_64-virtualbox-puppet-1.0.2.box
+    hypervisor: vagrant_virtualbox
+  Debian-7.8-32:
+    roles:
+      - agent
+    type: aio
+    platform: debian-7.8-32
+    box: puppetlabs/Debian-7.8-32-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/debian-7.8-i386-virtualbox-puppet-1.0.4.box
+    hypervisor: vagrant_virtualbox
+  Debian-7.8-64:
+    roles:
+      - agent
+    type: aio
+    platform: debian-7.8-64
+    box: puppetlabs/Debian-7.8-64-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/debian-7.8-x86_64-virtualbox-puppet-1.0.4.box
+    hypervisor: vagrant_virtualbox
+  #solaris-10_u9-sparc-64:
+  #  roles:
+  #    - agent
+  #  type: aio
+  #  platform: --32
+  #  box: UNKNOWN
+  #  box_url: URL goes here
+  #  hypervisor: vagrant_virtualbox
+  #solaris-11.2-sparc-64:
+  #  roles:
+  #    - agent
+  #  type: aio
+  #  platform: --32
+  #  box: UNKNOWN
+  #  box_url: URL goes here
+  #  hypervisor: vagrant_virtualbox
+  Ubuntu-12.04-32:
+    roles:
+      - agent
+    type: aio
+    platform: ubuntu-12.04-32
+    box: puppetlabs/ubuntu-12.04-32-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/ubuntu-12.04-i386-virtualbox-puppet-1.0.3.box
+    hypervisor: vagrant_virtualbox
+  Ubuntu-12.04-64:
+    roles:
+      - agent
+    type: aio
+    platform: ubuntu-12.04-64
+    box: puppetlabs/ubuntu-12.04-64-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/ubuntu-12.04-x86_64-virtualbox-puppet-1.0.3.box
+    hypervisor: vagrant_virtualbox
+  Ubuntu-14.04-32:
+    roles:
+      - agent
+    type: aio
+    platform: ubuntu-14.04-32
+    box: puppetlabs/ubuntu-14.04-32-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/ubuntu-14.04-i386-virtualbox-puppet-1.0.3.box
+    hypervisor: vagrant_virtualbox
+  Ubuntu-14.04-64:
+    roles:
+      - agent
+    type: aio
+    platform: ubuntu-14.04-64
+    box: puppetlabs/ubuntu-14.04-64-puppet
+    box_url: https://s3.amazonaws.com/puppetlabs-vagrantcloud/ubuntu-14.04-x86_64-virtualbox-puppet-1.0.3.box
+    hypervisor: vagrant_virtualbox
+  #Windows_Server-2008r2-64:
+  #  roles:
+  #    - agent
+  #  type: aio
+  #  platform: --64
+  #  box: UNKNOWN
+  #  box_url: URL goes here
+  #  hypervisor: vagrant_virtualbox
+  #Windows_Server-2012r2-64:
+  #  roles:
+  #    - agent
+  #  type: aio
+  #  platform: --64
+  #  box: UNKNOWN
+  #  box_url: URL goes here
+  #  hypervisor: vagrant_virtualbox
