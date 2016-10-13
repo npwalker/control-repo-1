@@ -5,10 +5,9 @@ rescue LoadError => e
   puts t.to_i
 else
 
-  environmentpath = ARGV[0]
-  environment     = ARGV[1]
+  puppet_environment_path = ARGV[0]
 
-  repo = Rugged::Repository.discover(File.join(environmentpath, environment))
+  repo = Rugged::Repository.discover(puppet_environment_path)
   head  = repo.head
 
   #sha1 hash of the newest commit
