@@ -1,3 +1,4 @@
+#!/opt/puppetlabs/puppet/bin/ruby
 
 script_path = File.expand_path(File.dirname(__FILE__))
 puppet_environment_path = File.dirname(script_path)
