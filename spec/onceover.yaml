@@ -12,7 +12,7 @@ nodes:
 #  - CentOS-5.11-64
 #  - CentOS-6.6-32
   - CentOS-6.6-64
-#  - CentOS-7.0-64
+  - CentOS-7.0-64
 #  - Debian-6.0.10-32
 #  - Debian-6.0.10-64
 #  - Debian-7.8-32
