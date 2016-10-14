@@ -1,6 +1,11 @@
+cache:
+  paths:
+    - .onceover
+    - vendor/bundle
+
 before_script:
   - gem install bundler --no-ri --no-rdoc
-  - bundle install --jobs $(nproc) "${FLAGS[@]}"
+  - bundle install --path vendor/bundle --jobs $(nproc) "${FLAGS[@]}"
 
 rspec:
   script:
