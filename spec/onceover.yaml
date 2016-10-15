@@ -22,7 +22,7 @@ nodes:
 #  - Ubuntu-12.04-32
   - Ubuntu-12.04-64
 #  - Ubuntu-14.04-32
-#  - Ubuntu-14.04-64
+  - Ubuntu-14.04-64
 #  - Windows_Server-2008r2-64
 #  - Windows_Server-2012r2-64
 
