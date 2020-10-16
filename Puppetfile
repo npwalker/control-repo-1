@@ -4,6 +4,8 @@
 #  :commit => '3ca47046a86aef9fbfdf58cc7b418d8e7254ecb9'
 
 if ENV['ADD_SUPPORTED_MODULES'] != 'false'
+    mod 'puppetlabs-dsc'
+    mod 'puppetlabs-dsc_lite'
     mod "puppetlabs/vcsrepo"
     mod "puppetlabs/apt"
     mod "puppetlabs/firewall"
