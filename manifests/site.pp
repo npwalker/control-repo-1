@@ -30,3 +30,19 @@ node default {
   # Example:
   #   class { 'my_class': }
 }
+
+node 'postgres-no-pe-centos7.puppetdebug.vlan' {
+  class { 'hdp::app_stack':
+        ca_server        => 'https://master-masterbranch-centos:8140',
+        dns_name         => 'postgres-no-pe-centos7',
+        image_repository => 'gcr.io/hdp-gcp-316600',
+        hdp_version      => 'latest',
+        manage_docker    => true,
+  }
+}
+
+node 'master-masterbranch-centos' {
+  class { 'hdp::data_processor':
+       hdp_url =>  'https://postgres-no-pe-centos7:9091',
+    }
+}
