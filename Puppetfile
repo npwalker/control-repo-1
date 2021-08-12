@@ -24,6 +24,8 @@ mod 'pltraining-rbac',
   :git    => 'https://github.com/puppetlabs/pltraining-rbac',
   :ref    => '9a823ff42810988f80a2b65738054a816620d972'
 
+mod 'puppetlabs-docker', '4.1.0'
+
 mod 'puppetlabs-hdp',
   :git    => 'https://github.com/puppetlabs/hdp',
   :branch => 'main'
