@@ -118,6 +118,7 @@ if ENV['ADD_SUPPORTED_MODULES'] != 'false'
     :ref => '1.5.0'
   mod 'inifile',
     :git => 'https://github.com/puppetlabs/puppetlabs-inifile.git'
+    :ref => '1.2.0'
   mod 'collectd',
     :git => 'https://github.com/pdxcat/puppet-module-collectd.git',
     :ref => 'v3.4.0'
