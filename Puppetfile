@@ -28,4 +28,4 @@ mod 'puppetlabs-docker', '4.1.0'
 
 mod 'puppetlabs-hdp',
   :git    => 'https://github.com/puppetlabs/hdp',
-  :branch => 'main'
+  :branch => 'dev'
