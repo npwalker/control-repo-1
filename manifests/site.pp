@@ -31,18 +31,18 @@ node default {
   #   class { 'my_class': }
 }
 
-node 'postgres-no-pe-centos7.puppetdebug.vlan' {
+node 'agent-to-puppet-enterprise-master.puppetdebug.vlan' {
   class { 'hdp::app_stack':
-        ca_server        => 'https://master-masterbranch-centos:8140',
-        dns_name         => 'postgres-no-pe-centos7',
+        ca_server        => 'https://puppet-enterprise-master.puppetdebug.vlan:8140',
+        dns_name         => 'agent-to-puppet-enterprise-master.puppetdebug.vlan',
         image_repository => 'gcr.io/hdp-gcp-316600',
         hdp_version      => 'latest',
         manage_docker    => true,
   }
 }
 
-node 'master-masterbranch-centos' {
+node 'puppet-enterprise-master.puppetdebug.vlan' {
   class { 'hdp::data_processor':
-       hdp_url =>  'https://postgres-no-pe-centos7:9091',
+       hdp_url =>  'https://agent-to-puppet-enterprise-master.puppetdebug.vlan:9091',
     }
 }
