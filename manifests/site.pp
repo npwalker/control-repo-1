@@ -38,6 +38,8 @@ node 'agent-to-puppet-enterprise-master.puppetdebug.vlan' {
         image_repository => 'gcr.io/hdp-gcp-316600',
         hdp_version      => 'latest',
         ui_use_tls       => true,
+        ui_key_file      => "${::settings::privatekeydir}/${::trusted['certname']}.pem",
+        ui_cert_file     => "${::settings::certdir}/${::trusted['certname']}.pem",
   }
 }
 
