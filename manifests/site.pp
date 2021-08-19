@@ -37,7 +37,7 @@ node 'agent-to-puppet-enterprise-master.puppetdebug.vlan' {
         dns_name         => 'agent-to-puppet-enterprise-master.puppetdebug.vlan',
         image_repository => 'gcr.io/hdp-gcp-316600',
         hdp_version      => 'latest',
-        manage_docker    => true,
+        ui_use_tls       => true,
   }
 }
 
